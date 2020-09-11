@@ -1,19 +1,18 @@
 {
-    "name": "beebots/adminorderhelper",
-    "description": "",
+    "name": "beebots/magento2-admin-order-helper",
+    "description": "Common shared helper module used by other BeeBots admin order modules",
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
-
-        "magento/magento-composer-installer": "*"
-    },
-    "suggest": {
-
+        "php": ">=7.1.0",
+        "magento/module-sales": "^102.0.0"
     },
     "type": "magento2-module",
-    "version": "0.1.0",
-    "license": [
-
-    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "support": {
+        "docs": "https://github.com/beebots/magento2-admin-order-helper",
+        "issues": "https://github.com/beebots/magento2-admin-order-helper/issues",
+        "source": "https://github.com/beebots/magento2-admin-order-helper"
+    },
     "autoload": {
         "files": [
             "registration.php"
@@ -21,13 +20,5 @@
         "psr-4": {
             "BeeBots\\AdminOrderHelper\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "BeeBots/AdminOrderHelper"
-            ]
-        ]
     }
 }
